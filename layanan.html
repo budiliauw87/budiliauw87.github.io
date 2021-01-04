@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Author" content="budiliauw87">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="./css/base-style.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/font-icon.css" type="text/css">
+</head>
+
+<body>
+    <div id="pageloader" class="pageloader is-light"><span class="title">On Progress</span></div>
+    <header>
+        <div class="container">
+            <!--navbar-->
+            <nav class="navbar is-spaced has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
+
+                <div class="navbar-brand">
+
+                    <a class="navbar-item" href="./index.html">
+                        <img src="./img/logo.svg" width="40" height="28">
+                        <h1>LIAUTECH</h1>
+                    </a>
+
+                    <div class="navbar-burger burger" data-target="navMenubd-example">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div id="navMenubd-example" class="navbar-menu">
+                    <div class="navbar-start">
+
+                        <div class="navbar-item has-dropdown is-mega">
+                            <div class="navbar-link">
+                                Blog
+                            </div>
+                            <div id="blogDropdown" class="navbar-dropdown is-mega is-hidden-mobile"
+                                data-style="width: 18rem;">
+                                <div class="container is-fluid">
+                                    <div class="columns">
+                                        <div class="column">
+                                            <h1 class="title is-6 is-mega-menu-title">Sub Menu Title</h1>
+                                            <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                                <div class="navbar-content">
+                                                    <p>
+                                                        <small class="has-text-info">03 Aug 2017</small>
+                                                    </p>
+                                                    <p>New feature: list of tags</p>
+                                                </div>
+                                            </a>
+                                            <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                                <div class="navbar-content">
+                                                    <p>
+                                                        <small class="has-text-info">03 Aug 2017</small>
+                                                    </p>
+                                                    <p>New feature: list of tags</p>
+                                                </div>
+                                            </a>
+                                            <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                                <div class="navbar-content">
+                                                    <p>
+                                                        <small class="has-text-info">03 Aug 2017</small>
+                                                    </p>
+                                                    <p>New feature: list of tags</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="column">
+                                            <h1 class="title is-6 is-mega-menu-title">Sub Menu Title</h1>
+                                            <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                                <div class="navbar-content">
+
+                                                    <p>
+                                                        <small class="has-text-info">03 Aug 2017</small>
+                                                    </p>
+                                                    <p>New feature: list of tags</p>
+                                                </div>
+                                            </a>
+                                            <a class="navbar-item " href="/documentation/overview/start/">
+                                                Overview
+                                            </a>
+                                            <a class="navbar-item "
+                                                href="http://bulma.io/documentation/modifiers/syntax/">
+                                                Modifiers
+                                            </a>
+                                            <a class="navbar-item "
+                                                href="http://bulma.io/documentation/columns/basics/">
+                                                Columns
+                                            </a>
+                                        </div>
+                                        <div class="column">
+                                            <h1 class="title is-6 is-mega-menu-title">Sub Menu Title</h1>
+                                            <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                                <div class="navbar-content">
+                                                    <p>
+                                                        <small class="has-text-info">03 Aug 2017</small>
+                                                    </p>
+                                                    <p>New feature: list of tags</p>
+                                                </div>
+                                            </a>
+                                            <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                                <div class="navbar-content">
+                                                    <p>
+                                                        <small class="has-text-info">03 Aug 2017</small>
+                                                    </p>
+                                                    <p>New feature: list of tags</p>
+                                                </div>
+                                            </a>
+                                            <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+                                                <div class="navbar-content">
+                                                    <p>
+                                                        <small class="has-text-info">03 Aug 2017</small>
+                                                    </p>
+                                                    <p>New feature: list of tags</p>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                        <div class="column">
+                                            <h1 class="title is-6 is-mega-menu-title">Sub Menu Title</h1>
+                                            <a class="navbar-item " href="/documentation/overview/start/">
+                                                Overview
+                                            </a>
+                                            <a class="navbar-item "
+                                                href="http://bulma.io/documentation/modifiers/syntax/">
+                                                Modifiers
+                                            </a>
+                                            <a class="navbar-item "
+                                                href="http://bulma.io/documentation/columns/basics/">
+                                                Columns
+                                            </a>
+                                            <a class="navbar-item "
+                                                href="http://bulma.io/documentation/layout/container/">
+                                                Layout
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="navbar-divider">
+                                <div class="navbar-item">
+                                    <div class="navbar-content">
+                                        <div class="level is-mobile">
+                                            <div class="level-left">
+                                                <div class="level-item">
+                                                    <strong>Stay up to date!</strong>
+                                                </div>
+                                            </div>
+                                            <div class="level-right">
+                                                <div class="level-item">
+                                                    <a class="button is-small" href="./blog.html">
+                                                        <span class="icon is-small">
+                                                            <i class="fa fa-rss"></i>
+                                                        </span>
+                                                        <span>view all</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="navbar-item is-active" href="./portofolio.html">
+                            <span> Portofolio</span>
+                        </a>
+                        <a class="navbar-item " href="./layanan.html">
+                            <span> Layanan</span>
+                        </a>
+                        <a class="navbar-item " href="./about.html">
+                            <span> Tentang</span>
+                        </a>
+                        <a class="navbar-item " href="./contact.html">
+                            <span> Kontak</span>
+                        </a>
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="field is-grouped">
+                                <p class="control">
+                                    <a class="button" href="#">
+                                        <span class="icon">
+                                            <i class="fa fa-lock"></i>
+                                        </span>
+                                        <span>
+                                            Log In
+                                        </span>
+                                    </a>
+
+                                </p>
+                                <p class="control">
+                                    <a class="button is-danger" href="#">
+                                        <span class="icon">
+                                            <i class="fa fa-user"></i>
+                                        </span>
+                                        <span>Register</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section blog-posts">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    Layanan
+                </h1>
+                <h2 class="subtitle mb-6">
+                    Your project our priority
+                </h2>
+
+                <div class="pricing-table mt-3">
+                    <div class="pricing-plan is-success">
+                        <div class="plan-header">Starter</div>
+                        <div class="plan-price"><span class="plan-price-amount"><span
+                                    class="plan-price-currency">$</span>20</span>/month</div>
+                        <div class="plan-items">
+                            <div class="plan-item">20GB Storage</div>
+                            <div class="plan-item">100 Domains</div>
+                            <div class="plan-item">-</div>
+                            <div class="plan-item">-</div>
+                        </div>
+                        <div class="plan-footer">
+                            <button class="button is-fullwidth">Current plan</button>
+                        </div>
+                    </div>
+
+                    <div class="pricing-plan is-link">
+                        <div class="plan-header">Startups</div>
+                        <div class="plan-price"><span class="plan-price-amount"><span
+                                    class="plan-price-currency">$</span>40</span>/month</div>
+                        <div class="plan-items">
+                            <div class="plan-item">20GB Storage</div>
+                            <div class="plan-item">25 Domains</div>
+                            <div class="plan-item">1TB Bandwidth</div>
+                            <div class="plan-item">-</div>
+                        </div>
+                        <div class="plan-footer">
+                            <button class="button is-fullwidth">Choose</button>
+                        </div>
+                    </div>
+
+                    <div class="pricing-plan is-info">
+                        <div class="plan-header">Growing Team</div>
+                        <div class="plan-price"><span class="plan-price-amount"><span
+                                    class="plan-price-currency">$</span>60</span>/month</div>
+                        <div class="plan-items">
+                            <div class="plan-item">200GB Storage</div>
+                            <div class="plan-item">50 Domains</div>
+                            <div class="plan-item">1TB Bandwidth</div>
+                            <div class="plan-item">100 Email Boxes</div>
+                        </div>
+                        <div class="plan-footer">
+                            <button class="button is-fullwidth">Choose</button>
+                        </div>
+                    </div>
+
+                    <div class="pricing-plan is-danger">
+                        <div class="plan-header">Enterprise</div>
+                        <div class="plan-price"><span class="plan-price-amount"><span
+                                    class="plan-price-currency">$</span>100</span>/month</div>
+                        <div class="plan-items">
+                            <div class="plan-item">2TB Storage</div>
+                            <div class="plan-item">100 Domains</div>
+                            <div class="plan-item">1TB Bandwidth</div>
+                            <div class="plan-item">1000 Email Boxes</div>
+                        </div>
+                        <div class="plan-footer">
+                            <button class="button is-fullwidth">Choose</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--section subcribe-->
+        <section class="hero is-light">
+            <div class="hero-body">
+
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-12 is-10-fullhd">
+                            <div class="columns is-vcentered">
+
+                                <div class="column is-half">
+                                    <header class="SectionHeader">
+                                        <h1 class="title has-text-weight-bold is-3">Stay in the know</h1>
+                                        <p class="subtitle"><span class="">
+                                                Receive our latest articles and feature updates
+                                            </span></p>
+                                    </header>
+                                </div>
+                                <div class="column is-half">
+                                    <form>
+                                        <div class="field is-grouped">
+                                            <div class="control is-expanded">
+                                                <input class="input is-medium" name="email" type="email"
+                                                    placeholder="Enter your email">
+                                            </div>
+                                            <div class="control">
+                                                <button class="button is-primary is-medium"
+                                                    type="submit">Subscribe</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <!--/columns-->
+                        </div>
+                        <!--/column-->
+                    </div>
+                    <!--/columns-->
+                </div>
+                <!--/container-->
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-5 is-4-widescreen">
+                    <a class="brand" href="/">
+                        <div class="brand-icon">
+                            <img src="./img/logo.svg" width="40" height="28">
+                            <h1>LIAUTECH</h1>
+                        </div>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Sit amet nulla facilisi morbi.</p>
+                    <br>
+                    <p>2020 © Copyright <strong>Your Company here</strong>. All rights reserved.</p>
+                </div>
+
+                <div class="column is-7 is-6-widescreen is-offset-2-widescreen">
+                    <div class="columns">
+                        <div class="column is-4">
+                            <div class="menu-footer">
+                                <p class="footer-link-title">
+                                    Menu
+                                </p>
+                                <ul class="footer-link">
+                                    <li><a href="#">Portofolio</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Tentang</a></li>
+                                    <li><a href="#">Hubungi Kami</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="column is-4 ">
+                            <div class="menu-footer">
+                                <p class="footer-link-title">
+                                    Service
+                                </p>
+                                <ul class="footer-link">
+                                    <li><a href="#">Pembuatan Website</a></li>
+                                    <li><a href="#">Aplikasi Mobile</a></li>
+                                    <li><a href="#">Aplikasi Web</a></li>
+                                    <li><a href="#">Custom UI</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="column is-4">
+                            <div class="menu-footer">
+                                <p class="footer-link-title">
+                                    Support
+                                </p>
+                                <ul class="footer-link">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Kontak</a></li>
+                                    <li><a href="#">Dokumentasi</a></li>
+                                    <li><a href="#">Bantuan</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="./js/app.min.js"></script>
+    <script type="text/javascript">
+
+        $(".pricing-plan").mouseover(function () {
+            $(".pricing-plan").removeClass("is-active");
+            $(this).addClass('is-active');
+        });
+
+    </script>
+</body>
+
+</html>

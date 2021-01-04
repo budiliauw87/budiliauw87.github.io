@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Author" content="budiliauw87">
+  <title>Liautech | 404 </title>
+  <link rel="stylesheet" href="./css/base-style.min.css" type="text/css">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="stylesheet" href="./css/font-icon.css" type="text/css">
+</head>
+
+<body>
+  <main>
+    <section class="hero is-light is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns has-text-centered">
+                <div class="column is-8 is-offset-2">
+                   <div style="margin:6rem;">
+                    <figure class="image">
+                        <img src="./img/something-lost.png" alt="">
+                    </figure>
+
+                    <h1 class="title">Opss Not Found</h1>
+                    <h2 class="subtitle ">Halaman yang kamu cari tidak di temukan</h2>
+                    <a class="button is-danger" href="./index.html">Kembali</a>
+                   </div>
+                </div>
+            </div>
+  
+          </div>
+          <!--/container -->
+        </div>
+        <!--/hero-body -->
+    </section>
+  </main>
+  <script src="./js/app.min.js"></script>
+  <script type="text/javascript">
+    $('.tab-link').on('click',(e)=>{
+      $('.tab-link').removeClass('is-active');
+      $(e.currentTarget).addClass('is-active');
+      var a = $(e.currentTarget).find('a').text();
+      filterCard(a);
+      //var j = $('.card').find('.card-header-title span:contains("Website")')
+      var j = $('.card-header-title span:not(:contains("'+a+'"))')
+      console.log(j);
+    })
+
+
+    function filterCard(filter){
+      if(filter.trim() == "All"){
+        $('.is-one-third').removeClass('is-hidden');
+      }else{
+        $('.is-one-third').addClass('is-hidden');
+        //var b = $('.card').find('.card-header-title span:not(:contains("'+filter+'"))').parents(".is-one-third");
+        var b = $('.card').find('.card-header-title span:contains('+filter+')').parents(".is-one-third");
+        $(b).removeClass("is-hidden");
+      }
+    }
+    //search
+  </script>
+</body>
+
+</html>

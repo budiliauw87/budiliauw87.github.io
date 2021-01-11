@@ -90,17 +90,39 @@ section h1,h2,h3{
     
 }
 .section-profile .avatar{
+    margin: 20px 0;
     position: relative;
     z-index: 1;
 }
+
+.section-profile .avatar:after {
+    position: absolute;
+    opacity: .3;
+    top: 7%;
+    left: 7%;
+    border-radius: 50%;
+    content: '';
+    height: calc(100% + 0px);
+    width: calc(100% + 0px);
+    background-image: -webkit-repeating-radial-gradient(center center,#f55,#f55 1px,transparent 0px,transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center,#f55,#f55 1px,transparent 0px,transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center,#f55,#f55 1px,transparent 0px,transparent 100%);
+    -webkit-background-size: 6px 6px;
+    -moz-background-size: 6px 6px;
+    background-size: 6px 6px;
+    z-index: -1;
+}
 .section-profile .avatar img{
-    padding: 1rem;
-    max-width: 100%;
+    width: 200px;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid #6b7e86;
+
 }
 
 .section-profile h4{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     color: #dd0000;
     margin: 5px 0;
     line-height: 1.2em;
@@ -150,6 +172,16 @@ section h1,h2,h3{
     padding:1rem 2rem;
     background: white;
 }
+.section-content h1{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 70px;
+}
+.section-content h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 30px;
+}
 footer{
     background: white;
     text-align: center;
@@ -176,12 +208,12 @@ header h1{
     display: inherit;
     list-style: none;
     text-align: center;
-    transition: all .5s ease-in;
+    transition: all .3s ease-in;
 }
 .nav-item i{
     font-size: 2rem;
     color: #6b7e86;
-    transition: all .5s ease-in;
+    transition: all .3s ease-in;
 }
 
 .nav-item span{
@@ -228,17 +260,9 @@ header h1{
     
 }
 @media screen and (max-width:400px){
- 
     .nav .nav-list{
-      
-       flex-direction: row;
-       width: 100vw;
-       height: 5rem;
-       bottom: 0;
-       justify-content: start;
-       align-items: center;
+       justify-content: stretch;
        padding: 0 1rem;
     }
     
 }
-

@@ -1,0 +1,244 @@
+/*
+SIMPLE CSS PERSONAL WEBSITE 
+
+@date 11-01-2021
+@author :  Budiliauw87
+@email  : budiliauw87@gmail.com
+
+github  : http://budiliauw87.github.io
+
+Dark Blue: #12232E
+
+Lighter Blue: #007CC7
+
+Lightest Blue: #4DA8DA
+
+Shadow of Dark Blue: #203647
+
+Shadow of Light Blue: #EEFBFB
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+#loading {
+    transition: all .8s ease;
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    background:#F3F3F3;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#spinner {
+    animation: rotate 0.5s infinite linear;
+    width: 50px;
+    height: 50px;
+    border: 2px solid  #3C403D;
+    border-bottom: 2px solid  #F3F3F3;
+    border-radius: 50%;
+    margin: 0;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #F3F3F3;
+    color: #3C403D;
+    font-family:"Inter", sans-serif;
+}
+main{
+    padding-bottom: 0;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+section h1,h2,h3{
+    margin:5px 0 7px;
+}
+.section-profile{
+    padding:1rem 2rem;
+    background: #e0e0e0;
+    width: 300px;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+.section-profile h2{
+    font-size: 2rem;
+    font-weight: 800;
+    
+}
+.section-profile .avatar{
+    position: relative;
+    z-index: 1;
+}
+.section-profile .avatar img{
+    padding: 1rem;
+    max-width: 100%;
+}
+
+.section-profile h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #dd0000;
+    margin: 5px 0;
+    line-height: 1.2em;
+}
+
+.social-links{
+    transition: all .5s ease-in;
+    margin: 20px 0;
+}
+.social-links ul{
+   list-style: none;
+}
+.social-links ul li{
+    display: inline-block;
+}
+.social-links ul li a {
+    color: #3c4244;
+    font-size: 2rem;
+    display: block;
+    margin: 0 10px;
+    text-align: center;
+}
+.btn{
+    color:#6b7e86;
+    background-color: #fff;
+    border-color: #fff;
+    display: inline-block;
+    position: relative;
+    padding: .8em 2.1em;
+    margin-bottom: .75em;
+    box-shadow: 0px 10px 18px #c7ccce;
+    transition: all .5s ease;
+    font-size: 0.8rem;
+}
+.btn:hover{
+    background-color: #6b7e86;
+    color:#e0e2e4;
+}
+.btn-round{
+    border-radius: 1.5rem;
+}
+.btn-resume{
+    margin-top:2rem;
+}
+
+.section-content{
+    padding:1rem 2rem;
+    background: white;
+}
+footer{
+    background: white;
+    text-align: center;
+    width: auto;
+    padding: 1rem 0.8rem;
+}
+header h1{
+    font-weight: 900;
+}
+.nav .nav-list{
+    overflow: auto;
+    padding: 1rem 0;
+    background:white;
+    box-shadow: 0px 0px 10px #cfd8dc;
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.nav .nav-list .nav-item{
+    display: inherit;
+    list-style: none;
+    text-align: center;
+    transition: all .5s ease-in;
+}
+.nav-item i{
+    font-size: 2rem;
+    color: #6b7e86;
+    transition: all .5s ease-in;
+}
+
+.nav-item span{
+    font-size: 0.8rem;
+    display: block;
+   color: grey;
+}
+
+.nav-item :hover i{
+    color: #dd0000;
+}
+.nav-item :hover span{
+    color: #dd0000;
+}
+
+.active a span,.active a i{
+    color: #dd0000;
+}
+
+@media screen and (max-width:550px){
+    main{
+        padding-left: 0;
+        padding-bottom: 5rem;
+        flex-direction: column;
+        
+    }
+    .section-profile .avatar img{
+        display: none;
+    }
+    .section-profile{
+        padding:2rem;
+        height: auto;
+        width: 100%;
+    }
+    .nav .nav-list{
+       flex-direction: row;
+       width: 100vw;
+       height: 5rem;
+       bottom: 0;
+       align-items: center;
+       justify-content: space-around;
+       padding: 0 1rem;
+    }
+    
+}
+@media screen and (max-width:400px){
+ 
+    .nav .nav-list{
+      
+       flex-direction: row;
+       width: 100vw;
+       height: 5rem;
+       bottom: 0;
+       justify-content: start;
+       align-items: center;
+       padding: 0 1rem;
+    }
+    
+}
+

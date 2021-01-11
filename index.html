@@ -1,666 +1,96 @@
 <!DOCTYPE html>
-<html>
-
+<html b:css='false' b:js='false' b:responsive='true'>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Author" content="budiliauw87">
-  <title>Liautech | Home</title>
-  <link rel="stylesheet" href="./css/base-style.min.css" type="text/css">
-  <link rel="stylesheet" href="./css/style.css" type="text/css">
-  <link rel="stylesheet" href="./css/font-icon.css" type="text/css">
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>My template for budiliauw87</title>
 </head>
 
 <body>
-  <div id="pageloader" class="pageloader"><span class="title">Pageloader</span></div>
-  <header>
-    <div class="container">
-      <!--navbar-->
-      <nav class="navbar is-spaced has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
-       
-        <div class="navbar-brand">
-
-          <a class="navbar-item" href="./index.html">
-            <img src="./assets/logo.svg" width="40" height="28">
-            <h1>LIAUTECH</h1>
-          </a>
-
-          <div class="navbar-burger burger" data-target="navMenubd-example">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-
-        <div id="navMenubd-example" class="navbar-menu">
-          <div class="navbar-start">
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <header>
+        <nav class="nav" >
+            <ul class="nav-list">
+                <li class="nav-item ">
+                    <a href="#" >
+                        <i class="mdi mdi-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="mdi mdi-notebook-edit-outline"></i>
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="mdi mdi-code-braces-box"></i>
+                        <span>Project</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a>
+                        <i class="mdi mdi-file-certificate-outline"></i>
+                        <span>Resume</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="mdi mdi-account-outline"></i>
+                        <span>About me</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="mdi mdi-email-outline"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-profile">
+            <div class="avatar">
+                <img src="./assets/myavatar.png"/>
+            </div>
             
-            <div class="navbar-item has-dropdown is-mega">
-              <div class="navbar-link">
-                Blog
-              </div>
-              <div id="blogDropdown" class="navbar-dropdown is-mega is-hidden-mobile" data-style="width: 18rem;">
-                <div class="container is-fluid">
-                  <div class="columns">
-                    <div class="column">
-                      <h1 class="title is-6 is-mega-menu-title">Sub Menu Title</h1>
-                      <a class="navbar-item" href="#">
-                        <div class="navbar-content">
-                          <p>
-                            <small class="has-text-info">03 Aug 2017</small>
-                          </p>
-                          <p>New feature: list of tags</p>
-                        </div>
-                      </a>
-                      <a class="navbar-item" href="#">
-                        <div class="navbar-content">
-                          <p>
-                            <small class="has-text-info">03 Aug 2017</small>
-                          </p>
-                          <p>New feature: list of tags</p>
-                        </div>
-                      </a>
-                      <a class="navbar-item" href="#">
-                        <div class="navbar-content">
-                          <p>
-                            <small class="has-text-info">03 Aug 2017</small>
-                          </p>
-                          <p>New feature: list of tags</p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="column">
-                      <h1 class="title is-6 is-mega-menu-title">Sub Menu Title</h1>
-                      <a class="navbar-item" href="#">
-                        <div class="navbar-content">
-
-                          <p>
-                            <small class="has-text-info">03 Aug 2017</small>
-                          </p>
-                          <p>New feature: list of tags</p>
-                        </div>
-                      </a>
-                      <a class="navbar-item " href="#">
-                        Overview
-                      </a>
-                      <a class="navbar-item " href="http://bulma.io/documentation/modifiers/syntax/">
-                        Modifiers
-                      </a>
-                      <a class="navbar-item " href="http://bulma.io/documentation/columns/basics/">
-                        Columns
-                      </a>
-                    </div>
-                    <div class="column">
-                      <h1 class="title is-6 is-mega-menu-title">Sub Menu Title</h1>
-                      <a class="navbar-item" href="#">
-                        <div class="navbar-content">
-                          <p>
-                            <small class="has-text-info">03 Aug 2017</small>
-                          </p>
-                          <p>New feature: list of tags</p>
-                        </div>
-                      </a>
-                      <a class="navbar-item" href="#">
-                        <div class="navbar-content">
-                          <p>
-                            <small class="has-text-info">03 Aug 2017</small>
-                          </p>
-                          <p>New feature: list of tags</p>
-                        </div>
-                      </a>
-                      <a class="navbar-item" href="#">
-                        <div class="navbar-content">
-                          <p>
-                            <small class="has-text-info">03 Aug 2017</small>
-                          </p>
-                          <p>New feature: list of tags</p>
-                        </div>
-                      </a>
-
-                    </div>
-                    <div class="column">
-                      <h1 class="title is-6 is-mega-menu-title">Sub Menu Title</h1>
-                      <a class="navbar-item " href="#">
-                        Overview
-                      </a>
-                      <a class="navbar-item " href="http://bulma.io/documentation/modifiers/syntax/">
-                        Modifiers
-                      </a>
-                      <a class="navbar-item " href="http://bulma.io/documentation/columns/basics/">
-                        Columns
-                      </a>
-                      <a class="navbar-item " href="http://bulma.io/documentation/layout/container/">
-                        Layout
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <hr class="navbar-divider">
-                <div class="navbar-item">
-                  <div class="navbar-content">
-                    <div class="level is-mobile">
-                      <div class="level-left">
-                        <div class="level-item">
-                          <strong>Stay up to date!</strong>
-                        </div>
-                      </div>
-                      <div class="level-right">
-                        <div class="level-item">
-                          <a class="button is-small" href="./blog.html">
-                            <span class="icon is-small">
-                              <i class="fa fa-rss"></i>
-                            </span>
-                            <span>view all</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a class="navbar-item" href="./portofolio.html">
-              <span> Portofolio</span> 
-            </a>
-            <a class="navbar-item " href="./layanan.html">
-              <span> Layanan</span> 
-            </a>
-            <a class="navbar-item " href="./about.html">
-              <span> Tentang</span>
-            </a>
-            <a class="navbar-item " href="./contact.html">
-              <span> Kontak</span>
-            </a>
-          </div>
-
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="field is-grouped">
-                <p class="control">
-                  <a class="button" href="#" id="btnlogin">
-                    <span class="icon">
-                      <i class="fa fa-lock"></i>
-                    </span>
-                    <span>
-                      Log In
-                    </span>
-                  </a>
-
-                </p>
-                <p class="control">
-                  <a class="button is-danger" href="#">
-                    <span class="icon">
-                      <i class="fa fa-user"></i>
-                    </span>
-                    <span>Register</span>
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <!--section intro -->
-    <section class="hero is-light is-medium">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-content">
-              <div class="intro-content">
-                <h1 class="title intro-title"><strong>Jasa</strong> Pemograman aplikasi berbasis web atau aplikasi
-                  android</h1>
-                <h2 class="intro-subtitle">
-                  <strong>Kami,</strong> siap wujudkan aplikasi hebat impian anda mulai dari
-                  design Algoritma dan semua project <strong>bergaransi!!</strong>
-                </h2>
-                <div class="intro-button mt-3">
-                  <button class="button is-primary">
-                    <span class="icon">
-                      <i class="fa fa-whatsapp"></i>
-                    </span>
-                    <span>Whatsapp</span>
-                  </button>
-                  <button class="button is-danger">
-                    <span class="icon">
-                      <i class="fa fa-phone"></i>
-                    </span>
-                    <span>Phone</span>
-                  </button>
-                  <button class="button is-link">
-                    <span class="icon">
-                      <i class="fa fa-envelope-o"></i>
-                    </span>
-                    <span>Email</span>
-                  </button>
-                </div>
-              </div>
-              <!--/intro-content-->
-            </div>
-            <!--/is-content-->
-
-            <div class="column">
-              <div class="monitor-wrap">
-                <div class="monitor-bezel">
-                  <div class="intro-code"><span id="typecode"></span></div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <!--/columns-->
-
-        </div>
-        <!--/container -->
-      </div>
-      <!--/hero-body -->
-    </section>
-
-    <!--section features-->
-    <section class="section feature">
-      <div class="container">
-          <div class="columns reverse-columns">
-              <div class="column">
-                  <h3 class="is-size-3">
-                    Feauture one
-                  </h3>
-                  <p class="has-text-green paragraph">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                  </p>
-              </div>
-              <div class="column">
-                  <img class="feature-img" src="./assets/worker.svg" alt="feature">
-              </div>
-          </div>
-      </div>
-
-      <div class="container">
-          <div class="columns">
-              <div class="column">
-                  <img class="feature-img" src="./assets/myavatar.svg" alt="feature">
-              </div>
-              <div class="column">
-                  <h3 class="is-size-3">
-                    Feauture two
-                  </h3>
-                  <p class="has-text-green paragraph">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                  </p>
-              </div>
-          </div>
-      </div>
-
-      <div class="container">
-          <div class="columns reverse-columns">
-              <div class="column">
-                  <h3 class="is-size-3">
-                    Feauture third
-                  </h3>
-                  <p class="has-text-green paragraph">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                  </p>
-              </div>
-              <div class="column">
-                  <img class="feature-img" src="./assets/first-post.png" alt="feature">
-              </div>
-          </div>
-      </div>
-
-      
-    </section>
-
-    <!--section subcribe-->
-    <section class="hero is-light">
-      <div class="hero-body">
-
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column is-12 is-10-fullhd">
-              <div class="columns is-vcentered">
-                
-                <div class="column is-half">
-                  <header class="SectionHeader">
-                    <h1 class="title has-text-weight-bold is-3">Stay in the know</h1>
-                    <p class="subtitle"><span class="">
-                      Receive our latest articles and feature updates
-                    </span></p>
-                  </header>
-                </div>
-                <div class="column is-half">
-                  <form>
-                    <div class="field is-grouped">
-                      <div class="control is-expanded">
-                        <input class="input is-medium" name="email" type="email" placeholder="Enter your email">
-                      </div>
-                      <div class="control">
-                        <button class="button is-primary is-medium" type="submit">Subscribe</button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              
-              </div><!--/columns-->
-            </div><!--/column-->
-          </div><!--/columns-->
-        </div><!--/container-->
-
-      </div>
-    </section>
-    <!--section blog -->
-    <section class="section section-blog">
-      <div class="container">
-        <div class="section-heading">
-          <h1 class="title">
-            What News From Us
-          </h1>
-        </div>
-        <div class="columns">
-          <div class="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-16by9">
-                  <img src="./assets/first-post.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="content">
-                  <p class="title is-4">John Smith</p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                  <a href="#">#css</a> <a href="#">#responsive</a>
-                  <br>
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-16by9">
-                  <img src="./assets/first-post.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="content">
-                  <p class="title is-4">John Smith</p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                  <a href="#">#css</a> <a href="#">#responsive</a>
-                  <br>
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-16by9">
-                  <img src="./assets/first-post.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="content">
-                  <p class="title is-4">John Smith</p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                  <a href="#">#css</a> <a href="#">#responsive</a>
-                  <br>
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-
-    <!--section contact-->
-    <section class="hero is-light is-bold">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-
-          <div class="columns">
-            <div class="column is-10 is-offset-1">
-              <div class="columns">
-                <div class="column is-three-fifths has-text-left">
-                  <h1 class="title is-1">Contact Us</h1>
-                  <p class="is-size-4">Hubungi sekarang juga atau konsultasikan project impian anda<br>dengan developer
-                    terbaik
-                    kami secara
-                    <strong>GRATIS !</strong>.</p>
-                  <div class="buttons mt-4">
-                    <a href="" target="_blank" class="button is-primary is-rounded">
-                      <span class="icon">
-                        <i class="fa fa-whatsapp"></i>
-                      </span>
-                      <span> 6282-1111-53753</span>
-          
-                    </a>
-                    <a href="" target="_blank" class="button is-danger is-rounded">
-                      <span class="icon">
-                        <i class="fa fa-phone"></i>
-                      </span>
-                      <span> Phone</span>
-                    </a>
-                    <a href="" target="_blank" class="button is-link is-rounded">
-                      <span class="icon">
-                        <i class="fa fa-envelope-o"></i>
-                      </span>
-                      <span> Mail</span>
-                    </a>
-                  </div>
-                  <div class="social-media">
-                    <a href="https://facebook.com" target="_blank" class="button is-light is-large"><i
-                        class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                    <a href="https://instagram.com" target="_blank" class="button is-light is-large"><i class="fa fa-instagram"
-                        aria-hidden="true"></i></a>
-                    <a href="https://twitter.com" target="_blank" class="button is-light is-large"><i class="fa fa-twitter"
-                        aria-hidden="true"></i></a>
-                    <a href="https://instagram.com" target="_blank" class="button is-light is-large"><i class="fa fa-github"
-                        aria-hidden="true"></i></a>
-                  </div>
-          
-                </div>
-                <div class="column has-text-left">
-                  <div class="field">
-                    <label class="label">Name</label>
-                    <div class="control">
-                      <input class="input is-medium" type="text">
-                    </div>
-                  </div>
-                  <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                      <input class="input is-medium" type="text">
-                    </div>
-                  </div>
-                  <div class="field">
-                    <label class="label">Message</label>
-                    <div class="control">
-                      <textarea class="textarea is-medium"></textarea>
-                    </div>
-                  </div>
-                  <div class="control">
-                    <button type="submit" class="button is-link is-fullwidth has-text-weight-medium is-medium">Send
-                      Message</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--modal login-->
-    <div id="modal-login" class="modal modal-pos-top is-active">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <div class="box">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae dolorem fuga
-            consectetur nostrum assumenda ex magni temporibus incidunt, 
-           sed repellat unde veritatis harum vel doloribus, odit, illo cum. Corrupti!</p>
-        </div>
-       
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-5 is-4-widescreen">
-          <a class="brand" href="/">
-            <div class="brand-icon">
-              <img src="./assets/logo.svg" width="40" height="28">
-              <h1>LIAUTECH</h1>
-            </div>
-          </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nulla facilisi morbi.</p>
-          <br>
-          <p>2020 © Copyright <strong>Your Company here</strong>. All rights reserved.</p>
-        </div>
-
-        <div class="column is-7 is-6-widescreen is-offset-2-widescreen">
-          <div class="columns">
-            <div class="column is-4">
-              <div class="menu-footer">
-                <p class="footer-link-title">
-                  Menu
-                </p>
-                <ul class="footer-link">
-                  <li><a href="#">Portofolio</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Tentang</a></li>
-                  <li><a href="#">Hubungi Kami</a></li>
+            <h2>BudiLiauw  <span>87</span></h2>
+            <h4>Web & Mobile Enginner</h4>
+            <div class="social-links">
+                <ul>
+                    <li><a href="#" target="_blank"><i class="mdi mdi-linkedin"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="mdi mdi-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="mdi mdi-twitter"></i></a></li>
                 </ul>
-              </div>
-              
             </div>
-
-            <div class="column is-4">
-              <div class="menu-footer">
-                <p class="footer-link-title">
-                  Service
-                </p>
-                <ul class="footer-link">
-                  <li><a href="#">Pembuatan Website</a></li>
-                  <li><a href="#">Aplikasi Mobile</a></li>
-                  <li><a href="#">Aplikasi Web</a></li>
-                  <li><a href="#">Custom UI</a></li>
-                </ul>
-              </div>
-              
+            <div class="btn-resume">
+                <a href="#" class="btn btn-round">Download CV</a>
             </div>
-
-            <div class="column is-4">
-              <div class="menu-footer">
-                <p class="footer-link-title">
-                  Support
-                </p>
-                <ul class="footer-link">
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Kontak</a></li>
-                  <li><a href="#">Dokumentasi</a></li>
-                  <li><a href="#">Bantuan</a></li>
-                </ul>
-              </div>
-              
-            </div>
-
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </footer>
-
-  <!-- navbar bottom -->
-  <script src="./js/app.min.js"></script>
-  <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', () => {
-
-      // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-      const $pageloader = document.getElementById("pageloader");
-      $(".pricing-plan").mouseover(function () {
-        $(".pricing-plan").removeClass("is-active");
-        $(this).addClass('is-active');
-      });
-
-      $(".has-dropdown").click(function () {
-        if($(this).hasClass("is-active")){
-          $(this).removeClass('is-active');
-        }else{
-          $(".has-dropdown").removeClass("is-active");
-          $(this).addClass('is-active');
-        }
-      });
-
-      $('#btnlogin').on('click',()=>{
-        $('#modal-login').addClass("is-active");
-      })
-      $('.modal-close').on('click',(e)=>{
-        $(e.currentTarget).closest('.modal').removeClass("is-active");
-      })
-
-      /*
-      var pageloaderTimeout = setTimeout( function() {
-        $pageloader.classList.add("is-active");
-      }, 2000 );
-      setTimeout(()=>{
-        $pageloader.classList.remove("is-active");
-      },4000)*/
-
-      // Check if there are any navbar burgers
-      
-      if ($navbarBurgers.length > 0) {
-        // Add a click event on each of them
-        $navbarBurgers.forEach(el => {
-          el.addEventListener('click', () => {
-
-            // Get the target from the "data-target" attribute
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-            //add 
-          });
-        });
-      }
-
-      document.querySelectorAll('.navbar-link').forEach(function(navbarLink){
-        navbarLink.addEventListener('click', function(){
-          navbarLink.nextElementSibling.classList.toggle('is-hidden-mobile');
-        })
-      });
-      
-      var typed = new Typed('#typecode', {
-        strings: ['npm install^1000\n`installing components...` ^1000\n`Fetching from source...`'],
-        typeSpeed: 80,
-        backSpeed: 20,
-        backDelay: 500,
-        startDelay: 1000,
-        loop: true// Default value
-      });
-      
-    });
-    
-    
-
-
-  </script>
+        </section>
+        <section class="section-content">
+            <h1>BudiLiauw  <span>87</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+        
+    </main>
+    <!--footer>Copyright 2020 Budiliauw87 Design By Budiliauw87</footer-->
+    <script type="text/javascript">
+        setTimeout(function () {
+            document.getElementById("loading").style.opacity = 0;
+            setTimeout(function () {
+                document.getElementById("loading").style.display = "none";
+            }, 800);
+        }, 1500);
+    </script>
 </body>
 
 </html>

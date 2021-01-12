@@ -140,6 +140,9 @@
           document.getElementById("loading").style.display = "none";
         }, 800);
         let urls = window.location.href.split("/").slice(-1)[0].replace("index.html","");
+        if(urls ==""){
+          urls = "#home"
+        }
         let navItems = document.getElementsByClassName("nav-item");
           Array.prototype.forEach.call(navItems,item=>{
             if(item.childNodes[1].getAttribute("href") ==  urls){

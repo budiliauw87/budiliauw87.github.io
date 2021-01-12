@@ -139,18 +139,26 @@
         setTimeout(function () {
           document.getElementById("loading").style.display = "none";
         }, 800);
-      let urls = window.location.href.split("/").slice(-1)[0].replace("index.html","");
-        if(urls!=""){
-          let navItems = document.getElementsByClassName("nav-item");
+        let urls = window.location.href.split("/").slice(-1)[0].replace("index.html","");
+        let navItems = document.getElementsByClassName("nav-item");
           Array.prototype.forEach.call(navItems,item=>{
-            
-            if(item.childNodes[1].getAttribute("href") ==  urls){
-              item.className ="nav-item active";
+            if(urls == "")
+            {
+              if(item.childNodes[1].getAttribute("href") ==  "#home"){
+                item.className ="nav-item active";
+              }else{
+                item.className ="nav-item";
+              }
             }else{
-              item.className ="nav-item";
+              if(item.childNodes[1].getAttribute("href") ==  urls){
+                item.className ="nav-item active";
+              }else{
+                item.className ="nav-item";
+              }
             }
-          });
-        }
+            
+        });
+        
         console.log("Base url : "+urls);  
     }
 

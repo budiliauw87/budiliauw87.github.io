@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html b:css='false' b:js='false' b:responsive='true'>
+
 <head>
   <meta content='width=device-width, initial-scale=1' name='viewport' />
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css" />
+  <link type="text/css" rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css" />
   <link rel="stylesheet" href="./assets/style.css">
   <title>budiliauw87 | Jasa pemograman aplikasi</title>
-  <link href='https://budiliauw87.github.io/index.html' rel='canonical' />
-  <meta name="description" content="Salam hormat, Saya budi memberikan layanan di bidang Jasa Pembuatan Program dan Software aplikasi berbasis web dan mobile Full Customize." />
+  <link href='https://budiliauw87.github.io/' rel='canonical' />
+  <meta name="description"
+    content="Salam hormat, Saya budi memberikan layanan di bidang Jasa Pembuatan Program dan Software aplikasi berbasis web dan mobile Full Customize." />
   <meta property="og:locale" content="en_US" />
   <meta property="og:title" content="budiliauw87 | Jasa pemograman aplikasi " />
-  <meta property="og:description" content="Salam hormat, Saya budi memberikan layanan di bidang Jasa Pembuatan Program dan Software aplikasi berbasis web dan mobile Full Customize."/>
+  <meta property="og:description"
+    content="Salam hormat, Saya budi memberikan layanan di bidang Jasa Pembuatan Program dan Software aplikasi berbasis web dan mobile Full Customize." />
   <meta property="og:url" content="https://budiliauw87.github.io/" />
   <meta property="og:site_name" content="budiliauw87 | Jasa pemograman aplikasi" />
   <meta property="article:author" content="http://github/budiliauw87" />
@@ -26,37 +30,37 @@
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="#home" title="budiliauw87 home">
+          <a href="#home" title="budiliauw87 home" onclick="navMenu(this);">
             <i class="mdi mdi-home"></i>
             <span>Home</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="#blog" title="blog budiliauw87">
+          <a href="#blog" title="blog budiliauw87" onclick="navMenu(this);">
             <i class="mdi mdi-notebook-edit-outline"></i>
             <span>Blog</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="#project" title="project aplikasi">
+          <a href="#project" title="project aplikasi" onclick="navMenu(this);">
             <i class="mdi mdi-code-braces-box"></i>
             <span>Project</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="#resume" title="resume budiliauw87">
+          <a href="#resume" title="resume budiliauw87" onclick="navMenu(this);">
             <i class="mdi mdi-file-certificate-outline"></i>
             <span>Resume</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="#about" title="about me">
+          <a href="#about" title="about me" onclick="navMenu(this);">
             <i class="mdi mdi-account-outline"></i>
             <span>About me</span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="#contact" title="contact us">
+          <a href="#contact" title="contact us" onclick="navMenu(this);">
             <i class="mdi mdi-email-outline"></i>
             <span>Contact</span>
           </a>
@@ -67,7 +71,7 @@
   <main>
     <section class="section-profile">
       <div class="avatar">
-        <img src="./assets/avatar.png" alt="avatar budiliauw87"/>
+        <img src="./assets/avatar.png" alt="avatar budiliauw87" />
       </div>
       <h2>Budi <span>Liauw87</span></h2>
       <h4>Web & Mobile Enginner</h4>
@@ -86,6 +90,7 @@
       <div class="home">
         <h1>Budi <span>Liauw87</span></h1>
         <h3>Web & Mobile Enginner</span></h3>
+
         <p>
           Di era revolusi Industri 4.0, banyak negara mulai mengabungkan industri dengan teknologi
           dan indonesia menjadi salah satu negara yang ikut serta. Mulai dari transaksi dan operasi mesin terintergrasi
@@ -107,16 +112,72 @@
         <br>
 
       </div>
+
     </section>
 
   </main>
   <script type="text/javascript">
-    setTimeout(function () {
+
+    if(window.attachEvent) {
+        window.attachEvent('onload', initialiazingJs());
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                initialiazingJs(evt);
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = initialiazingJs();
+        }
+    }
+   
+    
+    function initialiazingJs(){
       document.getElementById("loading").style.opacity = 0;
-      setTimeout(function () {
-        document.getElementById("loading").style.display = "none";
-      }, 800);
-    }, 1500);
+        setTimeout(function () {
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      let urls = window.location.href.split("/").slice(-1)[0].replace("index.html","");
+        if(urls!=""){
+          let navItems = document.getElementsByClassName("nav-item");
+          Array.prototype.forEach.call(navItems,item=>{
+            
+            if(item.childNodes[1].getAttribute("href") ==  urls){
+              item.className ="nav-item active";
+            }else{
+              item.className ="nav-item";
+            }
+          });
+        }
+        console.log("Base url : "+urls);  
+    }
+
+    function navMenu(obj) {
+      let navName = obj.getAttribute("href");
+      let parent = obj.parentElement;
+      let navItems = document.getElementsByClassName("nav-item");
+      Array.prototype.forEach.call(navItems,item=>{
+        item.className ="nav-item";
+        console.log(item);
+      });
+      parent.className ="nav-item active";
+      
+      switch (navName) {
+        case "#home":
+          console.log("Working Home");
+          break;
+        case "#blog":
+          console.log("Working blog");
+          break;
+        case "#project":
+          console.log("Working project");
+          break;
+      }
+      return false;
+    }
+    
   </script>
 </body>
 

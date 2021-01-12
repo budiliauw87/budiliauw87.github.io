@@ -142,24 +142,13 @@
         let urls = window.location.href.split("/").slice(-1)[0].replace("index.html","");
         let navItems = document.getElementsByClassName("nav-item");
           Array.prototype.forEach.call(navItems,item=>{
-            if(urls == "")
-            {
-              if(item.childNodes[1].getAttribute("href") ==  "#home"){
-                item.className ="nav-item active";
-              }else{
-                item.className ="nav-item";
-              }
+            if(item.childNodes[1].getAttribute("href") ==  urls){
+              item.className ="nav-item active";
             }else{
-              if(item.childNodes[1].getAttribute("href") ==  urls){
-                item.className ="nav-item active";
-              }else{
-                item.className ="nav-item";
-              }
+              item.className ="nav-item";
             }
-            
         });
         
-        console.log("Base url : "+urls);  
     }
 
     function navMenu(obj) {
@@ -168,7 +157,7 @@
       let navItems = document.getElementsByClassName("nav-item");
       Array.prototype.forEach.call(navItems,item=>{
         item.className ="nav-item";
-        console.log(item);
+        
       });
       parent.className ="nav-item active";
       

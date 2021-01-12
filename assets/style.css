@@ -17,7 +17,6 @@ Shadow of Dark Blue: #203647
 
 Shadow of Light Blue: #EEFBFB
 */
-@import url('https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 #loading {
     transition: all .8s ease;

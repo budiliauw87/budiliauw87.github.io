@@ -231,7 +231,30 @@ header h1{
 .active a span,.active a i{
     color: #dd0000;
 }
-
+#home{
+    visibility: visible;
+    display: none;
+    opacity: 0;
+    padding:1rem 2rem;
+    transition: all .3s ease-in-out;
+}
+#contact{
+    visibility: visible;
+    display: none;
+    padding:1rem 2rem;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+#error{
+    text-align: center;
+    align-items: center;
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+    flex-direction: column;
+}
 @media screen and (max-width:550px){
     main{
         padding-left: 0;

@@ -72,7 +72,7 @@ main{
     display: flex;
     flex-direction: row;
 }
-section h1,h2,h3{
+section h1,h2,h3,h4,h5{
     margin:5px 0 7px;
 }
 .section-profile{
@@ -83,7 +83,7 @@ section h1,h2,h3{
     align-items: center;
     text-align: center;
 }
-.section-profile h2{
+.section-profile h1{
     font-size: 2rem;
     font-weight: 800;
     
@@ -153,7 +153,7 @@ section h1,h2,h3{
     padding: .8em 2.1em;
     margin-bottom: .75em;
     box-shadow: 0px 10px 18px #c7ccce;
-    transition: all .5s ease;
+    transition: all .3s ease;
     font-size: 0.8rem;
 }
 .btn:hover{
@@ -167,11 +167,20 @@ section h1,h2,h3{
     margin-top:2rem;
 }
 
+.section-profile .copyrights {
+    width: 100%;
+    padding: 5px 10px 15px;
+    line-height: 14px;
+    font-size: 12px;
+    margin-top: 30px;
+    text-align: center;
+}
+
 .section-content{
-    padding:1rem 2rem;
+    width: 100%;
     background: white;
 }
-.section-content h1{
+.section-content h2{
     font-size: 3rem;
     font-weight: 900;
     line-height: 70px;
@@ -179,6 +188,11 @@ section h1,h2,h3{
 .section-content h3{
     font-size: 1.5rem;
     font-weight: 700;
+    line-height: 30px;
+}
+.section-content h4{
+    font-size: 1.2rem;
+    font-weight: 600;
     line-height: 30px;
 }
 footer{
@@ -212,13 +226,13 @@ header h1{
 .nav-item i{
     font-size: 2rem;
     color: #6b7e86;
-    transition: all .3s ease-in;
+    transition: all .3s ease;
 }
 
 .nav-item span{
     font-size: 0.8rem;
     display: block;
-   color: grey;
+    color: grey;
 }
 
 .nav-item :hover i{
@@ -255,6 +269,7 @@ header h1{
     transition: all .3s ease-in-out;
     flex-direction: column;
 }
+
 @media screen and (max-width:550px){
     main{
         padding-left: 0;

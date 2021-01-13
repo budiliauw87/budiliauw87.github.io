@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html b:css='false' b:js='false' b:responsive='true'>
+<html>
 
 <head>
   <meta content='width=device-width, initial-scale=1' name='viewport' />
@@ -86,10 +86,10 @@
       </div>
     </section>
     <section class="section-content">
-      <div class="home">
-        <h1>Budi <span>Liauw87</span></h1>
+      
+      <div id="home">
+        <h2>Budi <span>Liauw87</span></h2>
         <h3>Web & Mobile Enginner</span></h3>
-
         <p>
           Di era revolusi Industri 4.0, banyak negara mulai mengabungkan industri dengan teknologi
           dan indonesia menjadi salah satu negara yang ikut serta. Mulai dari transaksi dan operasi mesin terintergrasi
@@ -111,7 +111,18 @@
         <br>
 
       </div>
+      <div id="contact">
+        <h2>Contact</h2>
+        <h3>Konsultasi aplikasi impian anda</h3>
+      </div>
 
+      <div id="error">
+        <h2><span>404 </span>Not Found</h2>
+        <h4>We are sorry but the page you are looking for does not exist.<br>
+          You could return to the homepage or click back bottom.
+        </h4>
+      </div>
+      
     </section>
 
   </main>
@@ -124,33 +135,49 @@
             var curronload = window.onload;
             var newonload = function(evt) {
                 curronload(evt);
-                initialiazingJs(evt);
+                initialiazingJs(evt).then(()=>{
+                  let urls = window.location.href.split("/").slice(-1)[0].replace("index.html","");
+                  if(urls ==""){
+                    urls = "#home"
+                  }
+                  let navItems = document.getElementsByClassName("nav-item");
+                  Array.prototype.forEach.call(navItems,item=>{
+                    if(item.childNodes[1].getAttribute("href") ==  urls){
+                      item.className ="nav-item active";
+                    }else{
+                      item.className ="nav-item";
+                    }
+                  });
+                  showContentSelected(urls);
+                });
             };
             window.onload = newonload;
         } else {
-            window.onload = initialiazingJs();
+            console.log("oke")
+            window.onload = initialiazingJs().then(()=>{
+              let urls = window.location.href.split("/").slice(-1)[0].replace("index.html","");
+              if(urls ==""){
+                urls = "#home"
+              }
+              let navItems = document.getElementsByClassName("nav-item");
+              Array.prototype.forEach.call(navItems,item=>{
+                if(item.childNodes[1].getAttribute("href") ==  urls){
+                  item.className ="nav-item active";
+                }else{
+                  item.className ="nav-item";
+                }
+              });
+              showContentSelected(urls);
+            });
         }
     }
    
     
-    function initialiazingJs(){
+    async function initialiazingJs(){
       document.getElementById("loading").style.opacity = 0;
         setTimeout(function () {
           document.getElementById("loading").style.display = "none";
-        }, 800);
-        let urls = window.location.href.split("/").slice(-1)[0].replace("index.html","");
-        if(urls ==""){
-          urls = "#home"
-        }
-        let navItems = document.getElementsByClassName("nav-item");
-          Array.prototype.forEach.call(navItems,item=>{
-            if(item.childNodes[1].getAttribute("href") ==  urls){
-              item.className ="nav-item active";
-            }else{
-              item.className ="nav-item";
-            }
-        });
-        
+        }, 500);
     }
 
     function navMenu(obj) {
@@ -159,22 +186,33 @@
       let navItems = document.getElementsByClassName("nav-item");
       Array.prototype.forEach.call(navItems,item=>{
         item.className ="nav-item";
-        
       });
       parent.className ="nav-item active";
-      
-      switch (navName) {
-        case "#home":
-          console.log("Working Home");
-          break;
-        case "#blog":
-          console.log("Working blog");
-          break;
-        case "#project":
-          console.log("Working project");
-          break;
+      hideAllContent().then(()=>{
+        showContentSelected(navName);
+      });
+    }
+    function showContentSelected(navName){
+      let selectedContent = document.getElementById( navName.replace("#",""));
+      if(selectedContent !=null){
+        selectedContent.style.display = "block";
+        setTimeout(()=>{
+          selectedContent.style.opacity = 1;
+        },200)
+      }else{
+        let errorContent = document.getElementById( "error");
+        errorContent.style.display = "flex";
+        setTimeout(()=>{
+          errorContent.style.opacity = 1;
+        },200)
       }
-      return false;
+    }
+    async function hideAllContent(){
+      let sec = document.getElementsByClassName("section-content");
+      Array.prototype.forEach.call(sec[0].children,item=>{
+        item.style.opacity = 0;
+        item.style.display = "none";
+      });
     }
     
   </script>
